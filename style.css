@@ -1,1 +1,172 @@
+nav {
+    display: inline;
+    font-weight: bold;
+    padding: 20px;
+    width: auto;
+    margin: 15px;
+    text-align: center;
+}
 
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    margin: 6px;
+    display: inline;
+    font-size: 150%;
+    list-style-type: none;
+}
+
+nav a:link {
+    color: blue;
+}
+
+nav a:visited {
+    color: darkcyan;
+}
+
+nav a:hover {
+    color: greenyellow
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: inherit;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333
+}
+
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: aqua;
+    margin-bottom: 10px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #cccccc;
+    margin-top: 50px
+}
+
+h3 {
+    color: #000033;
+    margin-top: 50px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+footer {
+    text-align: center;
+}
+
+header,
+main,
+nav,
+footer,
+section {
+    display: block;
+}
+
+table {
+    border: 1px solid black;
+    width: 80%;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+.greybg {
+    background-color: lightgrey;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.greenbg {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.lightbg {
+    background-color: lightsteelblue;
+    font-weight: bolder;
+    text-align: right;
+}
+
+tr:nth-of-type(even) {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 64em) {
+    body {
+        margin: 0;
+        background-color: #ffffff;
+    }
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        display: inline;
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+    nav li {
+        display: inline;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+    footer {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    header {
+        padding-top: 1em;
+    }
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 90%
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border: 2px solid grey;
+    }
+    nav a {
+        display: block;
+    }
+}
